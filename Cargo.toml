@@ -1,0 +1,11 @@
+[package]
+name = "rss_alert"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4.39", default-features = false, features = ["clock", "now"] }
+reqwest = { version = "0.12.12", default-features = false, features = ["blocking", "http2", "default-tls", "__tls"] }
+roxmltree = "0.20.0"
+tauri-winrt-notification = "0.7.0"
+urlencoding = "2.1.3"
